@@ -37,6 +37,12 @@ PHANTOM WRLD
 
 <a href="contact.html">Contact</a>
 
+<div class="cart-icon" onclick="toggleCart()">
+
+🛒 <span id="cart-count">0</span>
+
+</div>
+
 </nav>
 
 </header>
@@ -203,6 +209,23 @@ Join Now
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+07.30 5:50 PM
+<div id="cart-panel">
+
+<h2>Shopping Cart</h2>
+
+<div id="cart-items"></div>
+
+<h3>Total: <span id="cart-total">$0.00</span></h3>
+
+<button class="gold-btn">
+Checkout
+</button>
+
+</div>
+
+<script src="js/cart.js"></script>
 
 <script src="js/script.js"></script>
 
