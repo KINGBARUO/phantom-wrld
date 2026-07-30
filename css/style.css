@@ -926,4 +926,72 @@ text-align:center;
 
 }
 
+07.30 5:54 PM
+/* ===========================
+   SHOPPING CART
+=========================== */
+
+.cart-icon{
+cursor:pointer;
+font-size:22px;
+color:var(--gold);
+display:flex;
+align-items:center;
+gap:6px;
+margin-left:20px;
+}
+
+#cart-count{
+background:var(--gold);
+color:black;
+border-radius:50%;
+padding:2px 8px;
+font-size:12px;
+font-weight:bold;
+}
+
+#cart-panel{
+position:fixed;
+top:0;
+right:-380px;
+width:350px;
+height:100%;
+background:#111;
+padding:30px;
+box-shadow:-5px 0 25px rgba(0,0,0,.5);
+transition:.4s;
+z-index:9999;
+overflow-y:auto;
+}
+
+#cart-panel.open{
+right:0;
+}
+
+#cart-panel h2{
+font-family:'Cinzel',serif;
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.cart-item{
+padding:15px 0;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.cart-item h4{
+color:white;
+margin-bottom:5px;
+}
+
+.cart-item p{
+color:#ccc;
+}
+
+#cart-total{
+color:var(--gold);
+font-size:1.3rem;
+font-weight:bold;
+}
+
 /* END OF FILE */
