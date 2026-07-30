@@ -2,72 +2,118 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
     background:#050505;
-    color:white;
+    color:#ffffff;
 }
 
+/* Glass Navigation Bar */
+
 header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:#111;
-    border-bottom:2px solid gold;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,0.15);
+    z-index:1000;
 }
 
 header h1{
-    color:gold;
+    color:#D4AF37;
     font-size:2rem;
+    letter-spacing:2px;
+    text-shadow:0 0 15px rgba(212,175,55,0.8);
+}
+
+nav{
+    display:flex;
+    gap:25px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
-    transition:.3s;
+    font-size:1rem;
+    font-weight:bold;
+    transition:0.3s;
 }
 
 nav a:hover{
-    color:gold;
+    color:#00BFFF;
+    text-shadow:0 0 12px #00BFFF;
 }
 
+/* Hero Section */
+
 .hero{
-    height:85vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    padding:120px 20px 20px;
 }
 
 .hero h2{
-    font-size:3rem;
-    color:gold;
+    font-size:3.5rem;
+    color:#D4AF37;
     margin-bottom:20px;
+    text-shadow:0 0 20px rgba(212,175,55,0.7);
 }
 
 .hero p{
-    font-size:1.2rem;
-    margin-bottom:30px;
+    font-size:1.3rem;
+    margin-bottom:35px;
+    color:#dddddd;
 }
 
 .hero a{
+    display:inline-block;
     text-decoration:none;
-    background:gold;
     color:black;
-    padding:15px 35px;
-    border-radius:50px;
+    background:#D4AF37;
+    padding:15px 40px;
+    border-radius:40px;
     font-weight:bold;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .hero a:hover{
     transform:scale(1.08);
-    box-shadow:0 0 20px gold;
+    box-shadow:0 0 25px #D4AF37;
 }
 
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav{
+    margin-top:15px;
+    gap:15px;
+}
+
+.hero h2{
+    font-size:2.3rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+}
