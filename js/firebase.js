@@ -139,33 +139,3 @@ window.logout = function () {
 
 };
 
-// ==========================
-// LOGIN STATUS
-// ==========================
-
-
-onAuthStateChanged(auth, (user) => {
-
-    const loginLink = document.getElementById("login-link");
-    const signupLink = document.getElementById("signup-link");
-    const logoutButton = document.getElementById("logout-button");
-
-    if (!loginLink || !signupLink || !logoutButton) {
-        return;
-    }
-
-    if (user) {
-
-        loginLink.style.display = "none";
-        signupLink.style.display = "none";
-        logoutButton.style.display = "inline-block";
-
-    } else {
-
-        loginLink.style.display = "inline-block";
-        signupLink.style.display = "inline-block";
-        logoutButton.style.display = "none";
-
-    }
-
-});
