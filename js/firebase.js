@@ -114,3 +114,26 @@ window.logout = function () {
     });
 };
 
+// ==========================
+// LOGOUT
+// ==========================
+
+window.logout = function () {
+
+    signOut(auth)
+
+        .then(() => {
+
+            alert("You have been logged out.");
+
+            window.location.href = "login.html";
+
+        })
+
+        .catch((error) => {
+
+            alert(error.message);
+
+        });
+
+};
