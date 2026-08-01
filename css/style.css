@@ -995,3 +995,87 @@ font-weight:bold;
 }
 
 /* END OF FILE */
+
+/* ==========================
+   LOGIN & SIGNUP PAGE
+========================== */
+
+.login-box,
+.signup-box {
+
+    width: 350px;
+    margin: 100px auto;
+    padding: 40px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,215,0,0.3);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+
+.login-box h1,
+.signup-box h1 {
+
+    color: gold;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 30px;
+
+}
+
+
+.login-box input,
+.signup-box input {
+
+    width: 90%;
+    padding: 15px;
+
+    margin: 10px 0;
+
+    background: rgba(0,0,0,0.5);
+
+    border: 1px solid gold;
+
+    border-radius: 10px;
+
+    color:white;
+
+}
+
+
+.login-box button,
+.signup-box button {
+
+    width:95%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    background:gold;
+
+    color:black;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+.login-box a,
+.signup-box a {
+
+    color:gold;
+
+}
