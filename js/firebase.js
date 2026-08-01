@@ -22,6 +22,29 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app)
 
+import { 
+  signInWithEmailAndPassword 
+} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+
+
+// Login function
+window.login = function() {
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      alert("Login successful!");
+      window.location.href = "index.html";
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+
+};
+
 // Sign Up
 window.signUp = function () {
     const email = document.getElementById("email").value;
