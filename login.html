@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>Phantom Wrld | Login</title>
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phantom Wrld | Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
 
-<div class="login-box">
 
-<h1>Welcome Back</h1>
+    <div class="login-box">
 
-<input
-id="email"
-type="email"
-placeholder="Email">
+        <h1>Welcome Back</h1>
 
-<input
-id="password"
-type="password"
-placeholder="Password">
+        <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            autocomplete="email"
+        >
 
-<button onclick="login()">
+        <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            autocomplete="current-password"
+        >
 
-Login
+        <button type="button" onclick="login()">
+            Login
+        </button>
 
-</button>
+        <p>
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+        </p>
 
-<p>
+        <p>
+            <a href="index.html">← Back to Phantom Wrld</a>
+        </p>
 
-Don't have an account?
+    </div>
 
-<a href="signup.html">
 
-Sign Up
+    <script type="module" src="js/firebase.js"></script>
 
-</a>
-
-</p>
-
-</div>
-
-<script type="module" src="js/firebase.js"></script>
 
 </body>
 
