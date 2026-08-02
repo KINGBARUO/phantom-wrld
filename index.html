@@ -275,13 +275,29 @@ Subscribe
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
 
-    onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, (user) => {
 
-        if (!user) {
-            window.location.href = "login.html";
+    if (user) {
+        // User is logged in
+        if (loginLink) {
+            loginLink.style.display = "none";
         }
 
-    });
+        if (signupLink) {
+            signupLink.style.display = "none";
+        }
+
+        if (logoutButton) {
+            logoutButton.style.display = "inline-block";
+        }
+
+    } else {
+        // User is not logged in
+        window.location.href = "login.html";
+    }
+
+});
+    
 </script>
 
 </body>
